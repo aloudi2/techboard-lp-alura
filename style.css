@@ -21,6 +21,17 @@ p {
   font-size: 24px;
   font-weight: regular;
 }
-a {
+
+#botao {
   color: #ffffff;
+  font-size: 24px;
+  text-decoration: none; /* Tira linha embaixo do link*/
+  background-color: #8233e8;
+  /*Define tamanho do botão*/
+  display: block; /*Permite que a gente mexa no tamanho e altura*/
+  width: 340px;
+  height: 66px;
+  text-align: center; /*Centreliza texto botão*/
+  line-height: 66px;
+  border-radius: 32px;
 }
