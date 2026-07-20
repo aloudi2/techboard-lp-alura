@@ -1,8 +1,10 @@
+/*Estilo desktop*/
 * {
   /* Resetando predefinição do navegador*/
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: #0e1014;
   color: #ffffff;
@@ -12,21 +14,27 @@ body {
 }
 
 h1 {
-  font-family: "unbounded", sans-serif;
+  font-family: "unbounded", sans-serif; /*Define fontes*/
   font-size: 64px;
   font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
 }
+
 p {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: regular;
+  text-align: center;
+  margin: 24px auto 0;
+  width: 792px;
 }
 
 #botao {
   color: #ffffff;
   font-size: 24px;
   text-decoration: none; /* Tira linha embaixo do link*/
-  background-color: #8233e8;
+  background-color: #9747ff;
   /*Define tamanho do botão*/
   display: block; /*Permite que a gente mexa no tamanho e altura*/
   width: 340px;
@@ -34,4 +42,48 @@ p {
   text-align: center; /*Centreliza texto botão*/
   line-height: 66px;
   border-radius: 32px;
+  margin: 40px auto; /*Centrelizado automaticamente*/
+}
+#botao:hover {
+  background-color: #8233e8; /*Mudando cor botão*/
+}
+
+#Celulares {
+  display: block;
+  margin: 0 auto;
+}
+
+#logo {
+  margin: 75px 0 0 360px; /*Arrumando logo*/
+}
+
+/*Para tablet*/
+@media (max-width: 768px) {
+  #logo {
+    margin: 65px 0 0 60px;
+  }
+  p {
+    width: 648px;
+  }
+}
+/*Para Celular*/
+@media (max-width: 375px) {
+  #logo {
+    margin: 32px 0 0 16px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 20px;
+    width: 340px;
+  }
+  #Celulares {
+    width: 340px;
+    height: 230px;
+  }
+  #botao {
+    font-size: 20px;
+    width: 251px;
+  }
 }
